@@ -1,0 +1,15 @@
+{
+  "originHash" : "465c00de9859f11f09d1c9f31dbf7ed6912ab1595050851023e51ec33827c91c",
+  "pins" : [
+    {
+      "identity" : "raygun4apple",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MindscapeHQ/raygun4apple.git",
+      "state" : {
+        "revision" : "4fd3c126f5b9622cfeaf1fc36621b963e78b66e1",
+        "version" : "2.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}

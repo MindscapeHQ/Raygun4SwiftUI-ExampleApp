@@ -14,6 +14,9 @@
 		24653F072C0581E10058210C /* RaygunCatalogueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24653F062C0581E10058210C /* RaygunCatalogueTests.swift */; };
 		24653F112C0581E10058210C /* RaygunCatalogueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24653F102C0581E10058210C /* RaygunCatalogueUITests.swift */; };
 		24653F132C0581E10058210C /* RaygunCatalogueUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24653F122C0581E10058210C /* RaygunCatalogueUITestsLaunchTests.swift */; };
+		24653F212C0584690058210C /* raygun4apple in Frameworks */ = {isa = PBXBuildFile; productRef = 24653F202C0584690058210C /* raygun4apple */; };
+		24653F242C0586BC0058210C /* RaygunType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24653F232C0586BC0058210C /* RaygunType.swift */; };
+		24653F262C0588B20058210C /* RaygunDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24653F252C0588B20058210C /* RaygunDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,8 @@
 		24653F0C2C0581E10058210C /* RaygunCatalogueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaygunCatalogueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24653F102C0581E10058210C /* RaygunCatalogueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaygunCatalogueUITests.swift; sourceTree = "<group>"; };
 		24653F122C0581E10058210C /* RaygunCatalogueUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaygunCatalogueUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		24653F232C0586BC0058210C /* RaygunType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaygunType.swift; sourceTree = "<group>"; };
+		24653F252C0588B20058210C /* RaygunDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaygunDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24653F212C0584690058210C /* raygun4apple in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +100,10 @@
 		24653EF42C0581E00058210C /* RaygunCatalogue */ = {
 			isa = PBXGroup;
 			children = (
+				24653F222C0586AD0058210C /* Models */,
 				24653EF52C0581E00058210C /* RaygunCatalogueApp.swift */,
 				24653EF72C0581E00058210C /* ContentView.swift */,
+				24653F252C0588B20058210C /* RaygunDetailView.swift */,
 				24653EF92C0581E10058210C /* Assets.xcassets */,
 				24653EFB2C0581E10058210C /* Preview Content */,
 			);
@@ -127,6 +135,14 @@
 			path = RaygunCatalogueUITests;
 			sourceTree = "<group>";
 		};
+		24653F222C0586AD0058210C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				24653F232C0586BC0058210C /* RaygunType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +159,9 @@
 			dependencies = (
 			);
 			name = RaygunCatalogue;
+			packageProductDependencies = (
+				24653F202C0584690058210C /* raygun4apple */,
+			);
 			productName = RaygunCatalogue;
 			productReference = 24653EF22C0581E00058210C /* RaygunCatalogue.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +234,9 @@
 				Base,
 			);
 			mainGroup = 24653EE92C0581E00058210C;
+			packageReferences = (
+				24653F1F2C0584150058210C /* XCRemoteSwiftPackageReference "raygun4apple" */,
+			);
 			productRefGroup = 24653EF32C0581E00058210C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +280,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				24653EF82C0581E00058210C /* ContentView.swift in Sources */,
+				24653F262C0588B20058210C /* RaygunDetailView.swift in Sources */,
 				24653EF62C0581E00058210C /* RaygunCatalogueApp.swift in Sources */,
+				24653F242C0586BC0058210C /* RaygunType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +446,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RaygunCatalogue/Preview Content\"";
-				DEVELOPMENT_TEAM = SCD58CA9T3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -435,7 +459,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nikwakelin.RaygunCatalogue;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raygun.RaygunCatalogue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -451,7 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RaygunCatalogue/Preview Content\"";
-				DEVELOPMENT_TEAM = SCD58CA9T3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -464,7 +488,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nikwakelin.RaygunCatalogue;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raygun.RaygunCatalogue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -479,11 +503,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SCD58CA9T3;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nikwakelin.RaygunCatalogueTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raygun.RaygunCatalogueTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -499,11 +523,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SCD58CA9T3;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nikwakelin.RaygunCatalogueTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raygun.RaygunCatalogueTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -521,7 +545,7 @@
 				DEVELOPMENT_TEAM = SCD58CA9T3;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nikwakelin.RaygunCatalogueUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raygun.RaygunCatalogueUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -539,7 +563,7 @@
 				DEVELOPMENT_TEAM = SCD58CA9T3;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nikwakelin.RaygunCatalogueUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raygun.RaygunCatalogueUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -588,6 +612,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		24653F1F2C0584150058210C /* XCRemoteSwiftPackageReference "raygun4apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MindscapeHQ/raygun4apple.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		24653F202C0584690058210C /* raygun4apple */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24653F1F2C0584150058210C /* XCRemoteSwiftPackageReference "raygun4apple" */;
+			productName = raygun4apple;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 24653EEA2C0581E00058210C /* Project object */;
 }
